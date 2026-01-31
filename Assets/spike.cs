@@ -25,4 +25,13 @@ public class spike : MonoBehaviour
         
         
     }
+    private void OnCollisionEnter(Collision collision)
+    {
+        Ballon b = collision.gameObject.GetComponent<Ballon>();
+        if (b != null)
+        {
+            b.pop();
+        }
+    }
+
 }
