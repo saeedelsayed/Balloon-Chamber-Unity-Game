@@ -18,8 +18,8 @@ public class spike : MonoBehaviour
         Vector3 movement = new Vector3(moveX, 0f, moveZ);
         transform.position += movement * moveSpeed * Time.deltaTime;
 
-        float x = Mathf.Clamp(transform.position.x, -21.86f, 21.95f);
-        float z = Mathf.Clamp(transform.position.z, -21.48f, 21.48f);
+        float x = Mathf.Clamp(transform.position.x, -60f, 60f);
+        float z = Mathf.Clamp(transform.position.z, -60f, 60f);
         float y = transform.position.y;
         transform.position = new Vector3(x, y, z);
         
