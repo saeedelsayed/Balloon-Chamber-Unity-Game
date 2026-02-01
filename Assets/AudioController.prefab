@@ -143,7 +143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0327ba08bf225140bb3dc71b0f136f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentEffect: 0
+  currentEffect: 2
   useScene: 0
   volume: 1
   stereoPosition: 0.5

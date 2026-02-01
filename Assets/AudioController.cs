@@ -152,11 +152,10 @@ namespace Tutorial_5
 
         private void UpdateParamsFromScene()
         {
-            if (player == null) return;
 
+            if (player == null) return;
+            
             // Audio source position (this GameObject)
-            if (player == null) return;
-
             Vector3 srcPos = transform.position;
             Vector3 rel = srcPos - player.position;
 
