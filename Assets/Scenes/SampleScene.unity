@@ -793,6 +793,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6338592809617130475, guid: 89260be2027e9d44d8410ec14b3d428b, type: 3}
+      propertyPath: maxHaasDelay
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6338592809617130475, guid: 89260be2027e9d44d8410ec14b3d428b, type: 3}
       propertyPath: currentEffect
       value: 1
       objectReference: {fileID: 0}

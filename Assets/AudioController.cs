@@ -24,6 +24,8 @@ namespace Tutorial_5
         [Header("References")]
         [SerializeField] private AudioClip audioClip;
         [SerializeField] private Transform player;
+        [SerializeField] private float maxPanDistance = 10f; // tweak in inspector
+
 
         private AudioSource audioSource;
 
@@ -53,10 +55,10 @@ namespace Tutorial_5
 
         private void Update()
         {
-            if (useScene)
-            {
-                UpdateParamsFromScene();
-            }
+            //if (useScene)
+            //{
+            //    UpdateParamsFromScene();
+            //}
         }
 
         void OnAudioFilterRead(float[] data, int channels)
@@ -91,10 +93,11 @@ namespace Tutorial_5
 
             // stereoPosition: 0 = left, 1 = right
             float a = Mathf.Clamp01(stereoPosition) * (Mathf.PI * 0.5f);
-
+  
             // Equal-power (sine/cosine) panning
             float gL = Mathf.Cos(a);
             float gR = Mathf.Sin(a);
+       
 
             // Apply gains to interleaved stereo data: L, R, L, R...
             for (int i = 0; i < data.Length; i += channels)
@@ -154,24 +157,16 @@ namespace Tutorial_5
         {
             if (player == null) return;
 
-            // Audio source position (this GameObject)
-            if (player == null) return;
-
             Vector3 srcPos = transform.position;
+            //Basically sound - camera
             Vector3 rel = srcPos - player.position;
 
-            // --- 1) Left-right pan from relative position ---
-            // Project onto player's right vector
-            float side = Vector3.Dot(rel, player.right);
+            float side = Vector3.Dot(rel, player.right); 
+            float pan = Mathf.Clamp(side / maxPanDistance, -1f, 1f); // -1..+1
+            stereoPosition = 0.5f * (pan + 1f);            // -> 0..1
 
-            // Map signed value to [0,1]
-            stereoPosition = Mathf.Clamp01(0.5f + 0.5f * side);
-
-            // --- 2) Volume from distance ---
             float distance = rel.magnitude;
-
-            // Simple inverse-distance style attenuation
-            volume = 1f / (1f + distance);
+            volume = 1f / (1f + distance * 0.2f);
         }
 
         private void OnValidate()
