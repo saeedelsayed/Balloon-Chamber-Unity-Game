@@ -3,6 +3,8 @@ using Tutorial_5;
 
 public class Ballon : MonoBehaviour
 {
+    public LogicScript logicScript;
+
     public Gradient ColorGradient;
     public GameObject body;
 
@@ -27,6 +29,8 @@ public class Ballon : MonoBehaviour
             bodyMeshRenderer = body.GetComponent<MeshRenderer>();
             if (bodyMeshRenderer != null) setRandomColor();
         }
+
+        logicScript = FindFirstObjectByType<LogicScript>();
     }
 
     void Update()
@@ -54,5 +58,6 @@ public class Ballon : MonoBehaviour
         if (body != null) body.SetActive(false);
 
         Destroy(body, 3f);
+        logicScript.increaseScore();
     }
 }
