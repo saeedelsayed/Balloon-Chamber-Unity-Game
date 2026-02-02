@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: spikeMat
-  m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
+  m_Name: AnaglyphMaterial
+  m_Shader: {fileID: -6465566751694194690, guid: 2e5bc0c89cb87b149b4bbff00a25067e, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -17,8 +17,7 @@ Material:
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
-  stringTagMap:
-    RenderType: Opaque
+  stringTagMap: {}
   disabledShaderPasses:
   - MOTIONVECTORS
   m_LockedProperties: 
@@ -65,8 +64,44 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_0fd27b74a8cb47aa9b501b981b515cca_Texture_1_Texture2D:
+        m_Texture: {fileID: 8400000, guid: 81e137130222d114cacb2c752d63eb9d, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_5c4af73d92374e208fc3639aabf94ba3_Texture_1_Texture2D:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_9473aa1963d44be5802ba0a40f3dc683_Texture_1_Texture2D:
+        m_Texture: {fileID: 8400000, guid: 9f1f9efb839d94fdfb3dda8331d68015, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_a45eb2b35f2448e0a334d8baf688b687_Texture_1_Texture2D:
+        m_Texture: {fileID: 8400000, guid: 03cc81a9bd9ffb2a0acbade288eb7d2c, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_a61a9d71a4bf45c2bef8f94b72594d9c_Texture_1_Texture2D:
+        m_Texture: {fileID: 8400000, guid: 8ee07e3afe6b3df4fa7e8d4b69cb9cb2, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_a9a3b502d52f470f864dcb6162f592b6_Texture_1_Texture2D:
+        m_Texture: {fileID: 8400000, guid: 4be3c88854bd2b842924e2213b149743, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_be953e17f45f4d53a89d70fc59b8fd3f_Texture_1_Texture2D:
+        m_Texture: {fileID: 8400000, guid: e1137c7eed249a1468a86edfb43992fb, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TextureSize_272eaf469c5445c18a0c484de176460e_Texture_1_Texture2D:
+        m_Texture: {fileID: 8400000, guid: 8ee07e3afe6b3df4fa7e8d4b69cb9cb2, type: 2}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TextureSize_6208498101354084b95369f027800697_Texture_1_Texture2D:
+        m_Texture: {fileID: 8400000, guid: 8ee07e3afe6b3df4fa7e8d4b69cb9cb2, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -113,7 +148,6 @@ Material:
     - _SrcBlendAlpha: 1
     - _Surface: 0
     - _WorkflowMode: 1
-    - _XRMotionVectorsPass: 1
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
@@ -122,7 +156,7 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!114 &1672631845675629106
+--- !u!114 &4293772657030410766
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -133,5 +167,5 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Editor::UnityEditor.Rendering.Universal.AssetVersion
+  m_EditorClassIdentifier: 
   version: 10

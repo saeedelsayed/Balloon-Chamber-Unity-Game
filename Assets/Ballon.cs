@@ -53,12 +53,6 @@ public class Ballon : MonoBehaviour
 
         if (body != null) body.SetActive(false);
 
-        if (rb != null)
-        {
-            rb.linearVelocity = Vector3.zero;
-            rb.useGravity = true;
-        }
-
-        Destroy(gameObject, 3f);
+        Destroy(body, 3f);
     }
 }
