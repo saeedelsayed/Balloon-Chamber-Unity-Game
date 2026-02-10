@@ -68,3 +68,10 @@ Instead of using Unity's built-in spatializer, custom scripts calculate the audi
    - `Shaders/`
 
       -  `AnaglyphShader`: Merges Left/Right textures for the 3D glasses effect.
+
+## Screenshots
+
+### The game scene
+![Game Scene Screenshot](screenshots/game_scene.png)
+### Toe-in effect
+![Toe-in Effect Screenshot](screenshots/toe-in_effect.png)
